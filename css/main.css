@@ -1,0 +1,911 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #fff;
+    background-color: #fa55aa;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site_wrap .header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.site_wrap .header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    transition: 0.7s;
+}
+
+.site_wrap .header .inner:hover {
+    background-color: #fff;
+}
+
+.site_wrap .header .inner .logo {
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.site_wrap .header .inner:hover .logo {
+    opacity: 1;
+}
+
+.site_wrap .header .inner .logo a {
+    height: 100%;
+}
+
+.site_wrap .header .inner .logo a img {
+    height: 100%;
+}
+
+.site_wrap .header .inner .left {
+    width: 210PX;
+    padding-left: 30px;
+}
+
+.site_wrap .header .inner .left .menu_btn {
+    height: 24px;
+}
+
+.site_wrap .header .inner .left .menu_btn a img {
+    height: 100%;
+}
+
+.site_wrap .header .inner .nav {
+    padding: 160px 60px 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffa1;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    top: 80px;
+    display: none;
+}
+
+.site_wrap .header .inner .nav.active {
+    display: block;
+}
+
+.site_wrap .header .inner .nav .gnb {
+/*     display: flex;
+    justify-content: center;
+    gap: 70px; */
+    text-align: end;
+}
+
+.site_wrap .header .inner .nav .gnb>li {
+    position: relative;
+}
+
+.site_wrap .header .inner .nav .gnb li .depth-01 {
+    width: 50%;
+    font-size: 28px;
+    color: #333;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    /* background-color: aqua; */
+    height: 80px;
+    display: block;
+}
+.site_wrap .header .inner .nav .gnb li .depth-01:hover {
+    color: #F9ADD4;
+}
+
+.site_wrap .header .inner .nav .gnb>li .depth-02 {
+    /* background-color: #FFF053; */
+    font-family: 'Pretendard-Regular';
+    width: 160px;
+    font-size: 20px;
+    color: #333;
+    line-height: 30px;
+    display: none;
+    position: absolute;
+    left: 936px;
+    top: 0;
+    text-align: start;
+}
+
+.site_wrap .header .inner .nav .gnb>li:hover .depth-02 {
+    display: block;
+}
+
+.site_wrap .header .inner .nav .gnb>li .depth-02>li:hover {
+    color: #999;
+}
+
+.site_wrap .header .inner .right {
+    width: 210px;
+    padding-right: 30px;
+}
+
+.site_wrap .header .inner .right .icons .btn {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.site_wrap .header .inner .right .icons .btn li a {
+    font-size: 16px;
+    height: 24px;
+    display: block;
+}
+
+.site_wrap .header .inner .right .icons .btn li a img {
+    height: 100%;
+}
+
+/* 메인비주얼 */
+.main .main_visual .swiper-slide {
+    position: relative;
+}
+
+.main .main_visual .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+
+.main .main_visual .swiper-pagination-bullet-active {
+    background: #F9ADD4;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.main .main_visual .swiper-slide .image {
+    width: 100%;
+    height: 100vh;
+}
+
+.main .main_visual .swiper-slide .image a img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.main .main_visual .swiper-slide .text {
+    color: #333;
+    width: 1500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .main_visual .swiper-slide:nth-child(1) .text {
+    color: #fff;
+}
+
+.main .main_visual .swiper-slide:nth-child(3) .text {
+    color: #fff;
+}
+
+.main .main_visual .swiper-slide:nth-child(5) .text {
+    color: #fff;
+}
+
+.main .main_visual .swiper-slide .text p {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+}
+
+.main .main_visual .swiper-slide .text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Pretendard-Regular';
+}
+
+.main .main_visual .swiper-slide .text span {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 섹션 01 - 서브메뉴 */
+.section .section-01 {
+    width: 1500px;
+    margin: 160px auto 160px;
+}
+
+.section .section-01 .item_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .section-01 .item_wrap .item {
+    width: 128px;
+}
+
+.section .section-01 .item_wrap .item a .box {
+    background-color: #FFEEF7;
+    width: 128px;
+    height: 128px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 128px;
+    transition: 0.3s;
+}
+
+.section .section-01 .item_wrap .item:nth-child(1) a .box {
+    background-color: #F9ADD4;
+}
+
+.section .section-01 .item_wrap .item a .box:hover {
+    transform: scale(1.13);
+}
+
+.section .section-01 .item_wrap .item a .box span {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    height: 100%;
+    font-size: 22px;
+    color: #F9ADD4;
+}
+
+.section .section-01 .item_wrap .item:nth-child(1) a .box span {
+    color: #fff;
+}
+
+.section .section-01 .item_wrap .item a .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.section .section-01 .item_wrap .item .text {
+    margin-top: 10px;
+}
+
+.section .section-01 .item_wrap .item .text p {
+    color: #333;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25.5px;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 섹션 02 - 신제품, 베스트 */
+.section .section-02 {
+    margin-bottom: 160px;
+}
+
+.section .section-02 .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .section-02 .wrap .left {
+    width: 942px;
+}
+
+.section .section-02 .wrap .left img {
+    width: 100%;
+    height: 1183px;
+    object-fit: cover;
+}
+
+.section .section-02 .wrap .right {
+    padding-right: 15px;
+    width: 927px;
+}
+
+.section .section-02 .wrap .right .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.section .section-02 .wrap .right .top .menu {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.section .section-02 .wrap .right .top .menu li {
+    font-size: 28px;
+    color: #333;
+}
+
+.section .section-02 .wrap .right .top .menu li:nth-child(2) {
+    width: 1px;
+    height: 30px;
+    background-color: #B9B9B9;
+}
+
+.section .section-02 .wrap .right .top .menu li:nth-child(3) {
+    color: #B9B9B9;
+}
+
+.section .section-02 .wrap .right .top .button span {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #B9B9B9;
+}
+
+.section .section-02 .wrap .right .top .button:hover span {
+    color: #333;
+}
+
+.section .section-02 .wrap .right .item_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 44px;
+}
+
+.section .section-02 .wrap .right .item_wrap .item {
+    width: 437px;
+}
+
+.section .section-02 .wrap .right .item_wrap .item .image {
+    width: 100%;
+    height: 450px;
+}
+
+.section .section-02 .wrap .right .item_wrap .item .image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.section .section-02 .wrap .right .item_wrap .item:hover .image img {
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #b9b9b9;
+    transform: scale(0.9);
+}
+
+.section .section-02 .wrap .right .item_wrap .item .text {
+    margin-top: 15px;
+}
+
+.section .section-02 .wrap .right .item_wrap .item .text h3 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Pretendard-Regular';
+}
+
+.section .section-02 .wrap .right .item_wrap .item .text .price {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.section .section-02 .wrap .right .item_wrap .item .text .price .discount span {
+    font-size: 20px;
+    color: #fff;
+    background-color: #F9ADD4;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.section .section-02 .wrap .right .item_wrap .item .text .price p {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.section .section-02 .wrap .right .item_wrap .item .text .price p:nth-child(3) {
+    font-size: 18px;
+    color: #b9b9b9;
+    text-decoration: line-through;
+    font-family: 'Pretendard-Regular';
+    font-weight: normal;
+}
+
+/* 섹션 03 - 어뮤즈픽 */
+.section .section-03 {
+    padding-bottom: 160px;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.section .section-03 h2 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 44px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section .section-03 .swiper-slide .item a img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.section .section-03 .swiper-slide .item:hover a img {
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #b9b9b9;
+    transform: scale(0.9);
+}
+
+.section .section-03 .swiper-slide .item .text {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.section .section-03 .swiper-slide .item .text h3 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Pretendard-Regular';
+}
+
+.section .section-03 .swiper-slide .item .text .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.section .section-03 .swiper-slide .item .text .price .discount {
+    font-size: 20px;
+    color: #fff;
+    background-color: #F9ADD4;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.section .section-03 .swiper-slide .item .text .price p {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.section .section-03 .swiper-slide .item .text .price p:nth-child(3) {
+    font-size: 18px;
+    color: #b9b9b9;
+    text-decoration: line-through;
+    font-family: 'Pretendard-Regular';
+    font-weight: normal;
+}
+
+/* 섹션 04 - 혜택(신규회원, 카카오톡) */
+.section .section-04 {
+    width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 160px;
+}
+
+.section .section-04 .item_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .section-04 .item_wrap .item .box {
+    width: 732px;
+    background-color: #F9ADD4;
+    padding: 40px 80px;
+}
+
+.section .section-04 .item_wrap .item:nth-child(2) .box {
+    background-color: #FFF053;
+}
+
+.section .section-04 .item_wrap .item .box .text {
+    margin-bottom: 64px;
+    color: #fff;
+}
+
+.section .section-04 .item_wrap .item:nth-child(2) .box .text {
+    color: #333;
+}
+
+.section .section-04 .item_wrap .item .box .text p {
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    margin-bottom: 5px;
+}
+
+.section .section-04 .item_wrap .item .box .text h3 {
+    font-size: 28px;
+    font-family: 'Pretendard-Regular';
+}
+
+.section .section-04 .item_wrap .item .box .btn span {
+    transition: 0.3s;
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 25px;
+    border: 1px solid #333;
+    border-radius: 100px
+}
+
+.section .section-04 .item_wrap .item .box .btn:hover span {
+    color: #fff;
+    background-color: #333;
+}
+
+/* 섹션 05 - 이브비건 */
+.section .section-05 {
+    background: url(../img/bg_evevegan.jpg) center center / cover;
+    padding-bottom: 160px;
+}
+
+.section .section-05 .wrap {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.section .section-05 .title {
+    text-align: center;
+}
+
+.section .section-05 .title h2 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section .section-05 .title p {
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Pretendard-Regular';
+}
+
+.section .section-05 .item_wrap {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .section-05 .item_wrap .item .box {
+    position: relative;
+}
+
+.section .section-05 .item_wrap .item .box a .image {
+    width: 348px;
+    height: 498px;
+}
+
+.section .section-05 .item_wrap .item .box a .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section .section-05 .item_wrap .item:hover .box a .image img {
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.section .section-05 .item_wrap .item .box .text {
+    transition: 0.5s;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-color: #99999959;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff
+}
+
+.section .section-05 .item_wrap .item:hover .box .text {
+    opacity: 1;
+    border-radius: 30px;
+}
+
+/* 섹션 06 - 동영상 */
+.section .section-06 {
+    margin: 80px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.section .section-06 .item {
+    margin: 0 auto;
+    width: 1500px;
+}
+
+.section .section-06 .item video {
+    width: 100%;
+}
+
+.section .section-06 .flow_text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -99;
+}
+
+.section .section-06 .flow_text .small_text {
+    display: flex;
+    gap: 100px;
+    animation-name: smalltextSlide;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.section .section-06 .flow_text .small_text p {
+    font-size: 24px;
+    font-family: "Red Hat Display", sans-serif;
+    color: #F9ADD4;
+    margin: 96px 0;
+}
+
+@keyframes smalltextSlide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.section .section-06 .flow_text .title {
+    font-size: 86px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    color: #F9ADD4;
+    display: flex;
+    gap: 72px;
+    animation-name: textSlide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes textSlide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 섹션 07 - 인스타그램 */
+.section .section-07 {
+    padding: 80px 0 160px;
+    background: url('../img/paper-03.png') top center / cover;
+}
+
+.section .section-07 .wrap {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.section .section-07 .wrap .title {
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section .section-07 .wrap .title a {
+    height: 40px;
+}
+
+.section .section-07 .wrap .title a img {
+    height: 40px;
+}
+
+.section .section-07 .wrap .title h2 {
+    font-size: 44px;
+    color: #fff;
+    font-family: "Red Hat Display", sans-serif;
+    margin-left: 15px;
+}
+
+.section .section-07 .wrap .slide {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.section .section-07 .wrap .slide .swiper-wrapper .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 푸터 */
+.footer {
+    background-color: #FFE7F3;
+    padding: 60px 40px;
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    color: #333;
+}
+
+.footer .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer .title .info {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.footer .text {
+    display: flex;
+    align-items: end;
+}
+
+.footer .text .text_left {
+    width: 50%;
+}
+
+.footer .text .text_left .ceo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .text .text_left .ceo div:nth-child(2) {
+    width: 1px;
+    height: 15px;
+    background-color: #999;
+}
+
+.footer .text .text_left .line-02 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .text .text_left .line-02 .address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .text .text_left .line-02 .address div:nth-child(2) {
+    width: 1px;
+    height: 15px;
+    background-color: #999;
+}
+
+.footer .text .text_left .line-02 .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .text .text_left .line-02 .email div:nth-child(2) {
+    width: 1px;
+    height: 15px;
+    background-color: #999;
+}
+
+.footer .text .text_left .line-03 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.footer .text .text_left .line-03 .business_license {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .text .text_left .line-03 .business_license div:nth-child(2) {
+    width: 1px;
+    height: 15px;
+    background-color: #999;
+}
+
+.footer .text .text_left .line-03 .registration_number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .text .text_left .line-03 .registration_number div:nth-child(2) {
+    width: 1px;
+    height: 15px;
+    background-color: #999;
+}
+
+.footer .text .text_left .copyright {
+    font-size: 44px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+}
+
+.footer .text .text_right {
+    width: 50%;
+    text-align: end;
+}
+
+.footer .text .text_right .customer .title {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .text .text_right .customer .number {
+    font-size: 44px;
+    font-family: "Red Hat Display", sans-serif;
+    margin-bottom: 10px;
+}
+
+.footer .text .text_right .hours {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .text .text_right .hours div:nth-child(3) {
+    width: 1px;
+    height: 15px;
+    background-color: #999;
+}

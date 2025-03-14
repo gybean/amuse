@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어뮤즈</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link AOS's CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mainVisual", {
+                spaceBetween: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+
+            var swiper = new Swiper(".AMUSE_P", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".AMUSE_P-swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            });
+
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            });
+
+            let menuBtn = document.querySelector('.menu_btn');
+            let allMenu = document.querySelector('.nav');
+
+            menuBtn.addEventListener('click', () => {
+                allMenu.classList.toggle('active');
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="site_wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#"><img src="img/logo.png" alt="어뮤즈 로고"></a>
+                </h1><!-- .logo end -->
+                <div class="left">
+                    <div class="menu_btn">
+                        <a href="#"><img src="img/hugeicons_menu-01.png" alt="메뉴 보기"></a>
+                    </div><!-- .menu_btn end -->
+                </div><!-- .left end -->
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#" class="depth-01">BRAND</a>
+                            <ul class="depth-02">
+                                <li><a href="#">AMUSE</a></li>
+                                <li><a href="#">AMUSE girl</a></li>
+                            </ul><!-- .depth-02 end -->
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">EVENT</a>
+                            <ul class="depth-02">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                                <li><a href="#">멤버십</a></li>
+                            </ul><!-- .depth-02 end -->
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">PRODUCT</a>
+                            <ul class="depth-02">
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">전제품</a></li>
+                                <li><a href="#">공식몰 단독💗</a></li>
+                                <li><a href="#">페이스</a></li>
+                                <li><a href="#">아이</a></li>
+                                <li><a href="#">립</a></li>
+                                <li><a href="#">웰니스</a></li>
+                                <li><a href="#">굿즈</a></li>
+                            </ul><!-- .depth-02 end -->
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">@amuseOfficial</a>
+                            <ul class="depth-02">
+                                <li><a href="#">인스타그램</a></li>
+                                <li><a href="#">틱톡</a></li>
+                                <li><a href="#">유튜브</a></li>
+                            </ul><!-- .depth-02 end -->
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">LOOK BOOK</a>
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">SHOW ROOM</a>
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">CS</a>
+                            <ul class="depth-02">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                            </ul><!-- .depth-02 end -->
+                        </li>
+                    </ul><!-- .gnb end -->
+                </nav><!-- .nav end -->
+                <div class="right">
+                    <div class="icons">
+                        <ul class="btn">
+                            <li><a href="#"><img src="img/Vector.png" alt="검색"></a></li>
+                            <li><a href="#"><img src="img/Vector (1).png" alt="마이페이지"></a></li>
+                            <li><a href="#"><img src="img/hugeicons_shopping-basket-01.png" alt="장바구니"></a></li>
+                            <li><a href="#"><img src="img/언어.png" alt="언어"></a></li>
+                        </ul><!-- .btn end -->
+                    </div><!-- .icons end -->
+                </div><!-- .right end -->
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+
+        <main class="main">
+            <div class="main_visual">
+                <!-- Swiper -->
+                <div class="swiper mainVisual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/4ebba44b20d364eefc367886be310eb9.jpg" alt="파우더 립앤치크"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>EVENT</p>
+                                <h2>파우더 립앤치크</h2>
+                                <span>입술과 볼을 부드럽게 물들이는<br />파우더 립앤치크 체험단 진행 중</span>
+                            </div><!-- .text end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/813933218b2ced2f706e56e6a1220f77.jpg" alt="웰니스 투명괄사 증정"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>FREE GIFT</p>
+                                <h2>웰니스 투명괄사 증정</h2>
+                                <span>2만 5천원 이상 구매 고객에게</span>
+                            </div><!-- .text end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/b9fae5714999ef37e0440e4ced1f33ff.jpg" alt="플러피 파우치 증정"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>FREE GIFT</p>
+                                <h2>플러피 파우치 증정</h2>
+                                <span>3만 5천원 이상 구매 고객에게</span>
+                            </div><!-- .text end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/f39e054bb3cc277734715b2e896e78e4.jpg" alt="듀 젤리 마스터 쿠션 세트"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>UP TO 49%</p>
+                                <h2>듀 젤리 마스터 쿠션 세트</h2>
+                                <span>더 맑고 탄탄하게, 더 완벽하게 진화한<br />산뜻 촉촉 물먹광 쿠션</span>
+                            </div><!-- .text end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/001dad3f06067f276bd1fdf6ec638483.jpg" alt="파우더 벨벳 틴트"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>UP TO 20%</p>
+                                <h2>파우더 벨벳 틴트</h2>
+                                <span>12시간 지속 고화소 무광 파우더 블러립</span>
+                            </div><!-- .text end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/888a5453763235135f9be81f9e441698.jpg" alt="퐁듀 밤 듀오 세트"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>UP TO 25%</p>
+                                <h2>퐁듀 밤 듀오 세트</h2>
+                                <span>쫀쫀하고 도톰하게 차오른 안티에이징 멜팅 컬러 립밤</span>
+                            </div><!-- .text end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <a href="#"><img src="img/d0dcc36f64718b18d7422692ac5e018e.jpg" alt="어뮤즈걸 특별 혜택"></a>
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>MEMBERSHIP</p>
+                                <h2>어뮤즈걸 SPECIAL 혜택 💖</h2>
+                                <span>어뮤즈걸만 받아볼 수 있는 쿠폰과 적립금을 비롯한<br />다양한 혜택을 회원가입 후 만나보세요!</span>
+                            </div><!-- .text end -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div><!-- .main_visual end -->
+        </main><!-- .main end -->
+
+        <section class="section">
+            <div class="section-01" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                data-aos-offset="0">
+                <div class="item_wrap">
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <span>EVENT</span>
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>이벤트</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <span>1st DEAL</span>
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>첫 구매 딜</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <span>BEST</span>
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>베스트 셀러</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <span>NEW</span>
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>신제품</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <span>ONLY</span>
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>공식몰 이벤트</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <img src="img/선크림.png" alt="선크림">
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>선크림 1+1</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <img src="img/1f44ae7d459f48f74b7caf25e96521b1.jpg" alt="세라믹 쿠션">
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>세라믹 쿠션<br />신규 컬러 출시</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="box">
+                                <img src="img/화면 캡처 2025-03-06 090416.png" alt="체험단">
+                            </div><!-- .box end -->
+                        </a>
+                        <div class="text">
+                            <p>체험단</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                </div><!-- .item_wrap end -->
+            </div><!-- .section-01 end -->
+
+            <div class="section-02">
+                <div class="wrap">
+                    <div class="left" data-aos="flip-left">
+                        <img src="img/01 1.jpg" alt="신제품 관련">
+                    </div><!-- .left end -->
+                    <div class="right" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                        data-aos-offset="0">
+                        <div class="top">
+                            <ul class="menu">
+                                <li><a href="#">NEW</a></li>
+                                <li></li>
+                                <li><a href="#">BEST</a></li>
+                            </ul><!-- .menu end -->
+                            <div class="button">
+                                <span>MORE VIEW</span>
+                            </div><!-- .button end -->
+                        </div><!-- .top end -->
+                        <div class="item_wrap">
+                            <div class="item">
+                                <div class="image">
+                                    <a href="#"><img src="img/Frame 11.jpg" alt="파우더 벨벳 틴트"></a>
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <h3>파우더 벨벳 틴트 (9종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>15%</span>
+                                        </div><!-- .discount end -->
+                                        <p>16,000원</p>
+                                        <p>19,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <div class="image">
+                                    <a href="#"><img src="img/15e4a7462a671851dec7f04dd774767b.jpg" alt="파우더 벨벳 틴트"></a>
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <h3>파우더 벨벳 틴트 듀오 세트</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>25%</span>
+                                        </div><!-- .discount end -->
+                                        <p>28,500원</p>
+                                        <p>38,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <div class="image">
+                                    <a href="#"><img src="img/a936b03d65c126cf55a5631e0e1621ca.jpg" alt="파우더 벨벳 틴트"></a>
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <h3>파우더 벨벳 틴트 9종 세트</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>54%</span>
+                                        </div><!-- .discount end -->
+                                        <p>79,000원</p>
+                                        <p>171,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </div><!-- .item_wrap end -->
+                    </div><!-- .right end -->
+                </div><!-- .wrap end -->
+            </div><!-- .section-02 end -->
+
+            <div class="section-03">
+                <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0" data-aos-offset="0">
+                    AMUSE's PICK</h2>
+                <!-- Swiper -->
+                <div class="swiper AMUSE_P" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                    data-aos-offset="0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/f4e485a217720080fe6722b0c5c87520.jpg" alt=""></a>
+                                <div class="text">
+                                    <h3>파우더 벨벳 틴트 (9종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>15%</span>
+                                        </div><!-- .discount end -->
+                                        <p>16,000원</p>
+                                        <p>19,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .item end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/87b4f28f32ca94a0e3b6d194e4d90d69.jpg" alt=""></a>
+                                <div class="text">
+                                    <h3>듀 파워 비건 쿠션 세트 (본품+리필2ea)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>50%</span>
+                                        </div><!-- .discount end -->
+                                        <p>38,900원</p>
+                                        <p>78,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/9603145fecc0c7b22199ee4b6980ba5a.jpg" alt=""></a>
+                                <div class="text">
+                                    <h3>듀 젤리 마스터 쿠션 세트 (본품+리필2ea)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>50%</span>
+                                        </div><!-- .discount end -->
+                                        <p>38,900원</p>
+                                        <p>78,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/8ae450cb2ccc0cfa53130261152078ab.jpg" alt=""></a>
+                                <div class="text">
+                                    <h3>듀 틴트 듀오 세트</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>25%</span>
+                                        </div><!-- .discount end -->
+                                        <p>29,900원</p>
+                                        <p>40,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/7bb8ec904b2426bf5e1ca97368e86cfc.jpg" alt=""></a>
+                                <div class="text">
+                                    <h3>파우더 벨벳 틴트 (9종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>15%</span>
+                                        </div><!-- .discount end -->
+                                        <p>16,000원</p>
+                                        <p>19,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/립앤치크헬시밤.jpg" alt="립앤치크헬시밤"></a>
+                                <div class="text">
+                                    <h3>립앤치크 헬시 밤 (5종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>10%</span>
+                                        </div><!-- .discount end -->
+                                        <p>15,300원</p>
+                                        <p>17,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/젤핏틴트.jpg" alt="젤핏틴트"></a>
+                                <div class="text">
+                                    <h3>젤핏 틴트 (12종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>10%</span>
+                                        </div><!-- .discount end -->
+                                        <p>18,000원</p>
+                                        <p>20,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/퐁듀밤.jpg" alt="퐁듀밤"></a>
+                                <div class="text">
+                                    <h3>퐁듀 밤 (10종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>10%</span>
+                                        </div><!-- .discount end -->
+                                        <p>18,000원</p>
+                                        <p>20,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <a href="#"><img src="img/베베틴트.jpg" alt="베베틴트"></a>
+                                <div class="text">
+                                    <h3>베베 틴트 (11종 택1)</h3>
+                                    <div class="price">
+                                        <div class="discount">
+                                            <span>10%</span>
+                                        </div><!-- .discount end -->
+                                        <p>18,000원</p>
+                                        <p>20,000원</p>
+                                    </div><!-- .price end -->
+                                </div><!-- .text end -->
+                            </div><!-- .image end -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .section-03 end -->
+
+            <div class="section-04" data-aos="fade-up" data-aos-delay="500">
+                <div class="item_wrap">
+                    <div class="item">
+                        <div class="box">
+                            <div class="text">
+                                <p>MEMBERSHIP</p>
+                                <h3>설레는 첫 쇼핑을 위한 신규 회원 혜택 💖</h3>
+                            </div><!-- .text end -->
+                            <div class="btn">
+                                <span>혜택 보기</span>
+                            </div><!-- .btn end -->
+                        </div><!-- .box end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="box">
+                            <div class="text">
+                                <p>KAKAO TALK</p>
+                                <h3>카카오톡 플친 추가 시 10% 할인 쿠폰 지급 💸</h3>
+                            </div><!-- .text end -->
+                            <div class="btn">
+                                <span>쿠폰 받으러 가기</span>
+                            </div><!-- .btn end -->
+                        </div><!-- .box end -->
+                    </div><!-- .item end -->
+                </div><!-- .item_wrap end -->
+            </div><!-- .section-04 end -->
+
+            <div class="section-05">
+                <div class="wrap">
+                    <div class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                        data-aos-offset="0">
+                        <h2>EVE VEGAN</h2>
+                        <p>AMUSE는 환경과 지속 가능성을 생각하는 이브 비건(EVE VEGAN) 인증을 획득한<br />비건 & 웰니스 뷰티 큐레이션을 선보입니다.</p>
+                    </div><!-- .title end -->
+                    <div class="item_wrap" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                        data-aos-offset="0">
+                        <div class="item">
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/4939ca57942200dd9fc1528d9daf78df 1.jpg" alt="AMARA&AZ">
+                                    </div><!-- .image end -->
+                                </a>
+                                <div class="text">
+                                    <p>AMARA&AZ</p>
+                                </div><!-- .text end -->
+                            </div><!-- .box end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/48604dc59c9663f7b5e70efd7bef87d8.jpg" alt="SHOWROOM">
+                                    </div><!-- .image end -->
+                                </a>
+                                <div class="text">
+                                    <p>SHOWROOM</p>
+                                </div><!-- .text end -->
+                            </div><!-- .box end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/WELLNESS.jpg" alt="PRODUCTS">
+                                    </div><!-- .image end -->
+                                </a>
+                                <div class="text">
+                                    <p>PRODUCTS</p>
+                                </div><!-- .text end -->
+                            </div><!-- .box end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/book.jpg" alt="WELLNESS BOOK">
+                                    </div><!-- .image end -->
+                                </a>
+                                <div class="text">
+                                    <p>WELLNESS BOOK</p>
+                                </div><!-- .text end -->
+                            </div><!-- .box end -->
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                </div><!-- .wrap end -->
+            </div><!-- .section-05 end -->
+
+            <div class="section-06">
+                <div class="item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                    data-aos-offset="0">
+                    <div>
+                        <video src="img/videoplayback.mp4" controls autoplay muted loop data-aos="zoom-in" data-aos-delay="500"></video>
+                    </div>
+                </div><!-- .item end -->
+                <div class="flow_text">
+                    <div class="small_text">
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                        <p>Hello girl</p>
+                    </div><!-- .small_text end -->
+                    <div class="title">
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                        <div>AMUSE</div>
+                    </div><!-- .title end -->
+                </div><!-- .flow_text end -->
+            </div><!-- .section-06 end -->
+
+            <div class="section-07">
+                <div class="wrap">
+                    <div class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                    data-aos-offset="0">
+                        <a href="https://www.instagram.com/amuse/"><img src="img/sectioninstagram_white.png"
+                                alt="인스타그램"></a>
+                        <h2>with #AMUSE</h2>
+                    </div><!-- .title end -->
+                    <div class="slide" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+                    data-aos-offset="0">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta1.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta2.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta3.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta4.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta5.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta6.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta7.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta8.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="img/insta9.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .slide end -->
+                </div><!-- .wrap end -->
+            </div><!-- .section-08 end -->
+        </section><!-- .section end -->
+
+
+        <footer class="footer">
+            <div class="title">
+                <strong>주식회사 어뮤즈</strong>
+                <div class="info">
+                    <div><a href="#"><strong>개인정보처리방침</strong></a></div>
+                    <div><a href="#"><strong>이용약관</strong></a></div>
+                </div><!-- .info end -->
+            </div><!-- .title end -->
+            <div class="text">
+                <div class="text_left">
+                    <div class="ceo">
+                        <div>대표이사</div>
+                        <div></div>
+                        <div>이승민</div>
+                    </div><!-- .ceo end -->
+                    <div class="line-02">
+                        <div class="address">
+                            <div>주소</div>
+                            <div></div>
+                            <div>경기 여주시 명품로 360 여주프리미엄아울렛 4층</div>
+                        </div><!-- .address end -->
+                        <div class="email">
+                            <div>해외수출 및 제휴 문의</div>
+                            <div></div>
+                            <div>help_amuse@amusemakeup.com</div>
+                        </div><!-- .email end -->
+                    </div><!-- .line-02 -->
+                    <div class="line-03">
+                        <div class="business_license">
+                            <div>사업자 등록번호</div>
+                            <div></div>
+                            <div>392-87-00797</div>
+                        </div><!-- .business_license end -->
+                        <div class="registration_number">
+                            <div>통신판매 신고번호</div>
+                            <div></div>
+                            <div>2018-성남분당-0179 </div>
+                        </div><!-- .registration_number end -->
+                    </div><!-- .line-03 end -->
+                    <div class="copyright">
+                        <div>©AMUSE all right reserved.</div>
+                    </div><!-- .copyright end -->
+                </div><!-- .text_left end -->
+                <div class="text_right">
+                    <div class="customer">
+                        <div class="title">
+                            <strong>대표전화/고객센터</strong>
+                        </div><!-- .title end -->
+                        <div class="number">
+                            <strong>1833-7689</strong>
+                        </div><!-- .number end -->
+                        <div class="hours">
+                            <div>평일</div>
+                            <div>09:00 - 17:00</div>
+                            <div></div>
+                            <div>점심</div>
+                            <div>11:50 - 13:00</div>
+                        </div><!-- .hours end -->
+                        <div class="holidays">
+                            주말 및 공휴일 휴무
+                        </div><!-- .holidays end -->
+                    </div><!-- .customer end -->
+                </div><!-- .text_right end -->
+            </div><!-- .text end -->
+        </footer><!-- .footer end -->
+    </div><!-- .site_wrap end -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
