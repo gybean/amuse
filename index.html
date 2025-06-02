@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어뮤즈</title>
-    <link rel="stylesheet" href="css/main.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link AOS's CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         window.onload = () => {
+            AOS.init();
+
             var swiper = new Swiper(".mainVisual", {
                 spaceBetween: 0,
                 pagination: {
@@ -130,10 +135,9 @@
                 <div class="right">
                     <div class="icons">
                         <ul class="btn">
-                            <li><a href="#"><img src="img/Vector.png" alt="검색"></a></li>
-                            <li><a href="#"><img src="img/Vector (1).png" alt="마이페이지"></a></li>
-                            <li><a href="#"><img src="img/hugeicons_shopping-basket-01.png" alt="장바구니"></a></li>
-                            <li><a href="#"><img src="img/언어.png" alt="언어"></a></li>
+                            <li><a href="#">KOR</a></li>
+                            <li><a href="#"><img src="img/icon-03.png" alt="마이페이지"></a></li>
+                            <li><a href="#"><img src="img/icon-02.png" alt="장바구니"></a></li>
                         </ul><!-- .btn end -->
                     </div><!-- .icons end -->
                 </div><!-- .right end -->
@@ -177,7 +181,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="image">
-                                <a href="#"><img src="img/f39e054bb3cc277734715b2e896e78e4.jpg" alt="듀 젤리 마스터 쿠션 세트"></a>
+                                <a href="#"><img src="img/f39e054bb3cc277734715b2e896e78e4.jpg"
+                                        alt="듀 젤리 마스터 쿠션 세트"></a>
                             </div><!-- .image end -->
                             <div class="text">
                                 <p>UP TO 49%</p>
@@ -614,7 +619,8 @@
                 <div class="item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
                     data-aos-offset="0">
                     <div>
-                        <video src="img/videoplayback.mp4" controls autoplay muted loop data-aos="zoom-in" data-aos-delay="500"></video>
+                        <video src="img/videoplayback.mp4" controls autoplay muted loop data-aos="zoom-in"
+                            data-aos-delay="500"></video>
                     </div>
                 </div><!-- .item end -->
                 <div class="flow_text">
@@ -648,13 +654,13 @@
             <div class="section-07">
                 <div class="wrap">
                     <div class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
-                    data-aos-offset="0">
+                        data-aos-offset="0">
                         <a href="https://www.instagram.com/amuse/"><img src="img/sectioninstagram_white.png"
                                 alt="인스타그램"></a>
                         <h2>with #AMUSE</h2>
                     </div><!-- .title end -->
                     <div class="slide" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
-                    data-aos-offset="0">
+                        data-aos-offset="0">
                         <!-- Swiper -->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
@@ -760,12 +766,7 @@
         </footer><!-- .footer end -->
     </div><!-- .site_wrap end -->
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
